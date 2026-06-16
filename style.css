@@ -329,3 +329,47 @@ body{
         #ff5c8a
     );
 }
+/* Mobile Responsive */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 20px;
+    }
+
+    .hero-left h1 {
+        font-size: 2.5rem;
+    }
+
+    .emergency-panel {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .feature-grid,
+    .safety-grid,
+    .tips-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-form {
+        flex-direction: column;
+    }
+
+    .contact-form input,
+    .contact-form button {
+        width: 100%;
+    }
+}
