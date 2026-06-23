@@ -453,3 +453,63 @@ body{
     background:#1e293b;
     color:white;
 }
+let sosClicks =
+Number(localStorage.getItem("sosClicks")) || 0;
+
+let incidentReports =
+Number(localStorage.getItem("incidentReports")) || 0;
+
+let contactsSaved =
+Number(localStorage.getItem("contactsSaved")) || 0;
+
+updateDashboard();
+
+function updateDashboard(){
+
+    document.getElementById("sosCount").innerHTML =
+    sosClicks;
+
+    document.getElementById("incidentCount").innerHTML =
+    incidentReports;
+
+    document.getElementById("contactCount").innerHTML =
+    contactsSaved;
+}
+
+function sendSOS(){
+
+    sosClicks++;
+
+    localStorage.setItem(
+        "sosClicks",
+        sosClicks
+    );
+
+    updateDashboard();
+
+    alert("SOS Sent");
+}
+
+function reportIncident(){
+
+    incidentReports++;
+
+    localStorage.setItem(
+        "incidentReports",
+        incidentReports
+    );
+
+    updateDashboard();
+}
+
+function addContact(){
+
+    contactsSaved++;
+
+    localStorage.setItem(
+        "contactsSaved",
+        contactsSaved
+    );
+
+    updateDashboard();
+}
