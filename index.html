@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nirbhaya | Women's Safety Platform</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+  <body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">Nirbhaya</div>
+
+    <ul class="nav-links">
+      <li><a href="#Home">Home</a></li>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#safety">Safety</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <button class="sos-btn">SOS</button>
+  </nav>
+
+  <!-- Hero Section -->
+
+  <section class="hero">
+
+    <div class="hero-left">
+      <span class="tag">Women's Safety Platform</span>
+
+      <h1>
+        Protecting Women
+        Through Technology
+      </h1>
+
+      <p>
+        Empowering women with instant SOS alerts,
+        location sharing and emergency assistance
+        whenever they need it.
+      </p>
+
+      
+
+      <div class="hero-buttons">
+        <button id="getStartedBtn" class="primary-btn">
+          Get Started
+        </button>
+
+        <button class="secondary-btn">
+          Learn More
+        </button>
+      </div>
+    </div>
+
+    <div class="emergency-panel">
+
+  <div class="sos-box">
+    <h3>Emergency SOS</h3>
+    <button id="sosBtn"onclick="emergencySOS()">
+        PRESS SOS
+    </button>
+  </div>
+
+  <div class="location-box">
+    <h3>Live Location</h3>
+    <p id="locationText">
+      Location not detected
+    </p>
+    <button onclick="getLocation()"
+    class="location-btn">
+    Get Current Location
+    </button>
+  </div>
+</section>
+
+<div id="incidentFormContainer" style="display:none; padding:40px;">
+
+<h2>Report an Incident</h2>
+
+<form id="incidentForm">
+
+<input type="text" placeholder="Full Name" required>
+
+<input type="number" placeholder="Age">
+
+<input type="tel" placeholder="Phone Number" required>
+
+<input type="text" placeholder="Area of Incident" required>
+
+<textarea placeholder="Describe what happened..." rows="5"></textarea>
+
+<input type="file" accept="image/*">
+
+<input type="text" placeholder="Emergency Contact Name">
+
+<input type="tel" placeholder="Emergency Contact Number">
+
+<button type="submit">Submit Report</button>
+
+</form>
+
+</div>
+
+<section class="features"id="features">
+
+    <h2 class="section-title">Key Features</h2>
+
+    <div class="feature-grid">
+
+        <div class="feature-card">
+            <h3>🚨 Instant SOS</h3>
+            <p>Send emergency alerts with a single tap.</p>
+        </div>
+
+        <div class="feature-card">
+            <h3>📍 Live GPS Tracking</h3>
+            <p>Share your real-time location during emergencies.</p>
+        </div>
+
+        <div class="feature-card">
+            <h3>📞 Trusted Contacts</h3>
+            <p>Quickly notify family and friends.</p>
+        </div>
+
+        <div class="feature-card">
+            <h3>📝 Incident Reporting</h3>
+            <p>Report incidents securely and efficiently.</p>
+        </div>
+
+        <div class="feature-card">
+            <h3>🛡 Safe Routes</h3>
+            <p>Get safer route suggestions while travelling.</p>
+        </div>
+
+        <div class="feature-card">
+            <h3>👭 Community Support</h3>
+            <p>Connect with nearby volunteers and helpers.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="safety-section" id="safety">
+
+    <h2 class="section-title">
+        Emergency Helpline Numbers
+    </h2>
+
+    <div class="safety-grid">
+
+        <div class="number-card">
+            🚔 Police
+            <h3>100</h3>
+        </div>
+
+        <div class="number-card">
+            🚑 Ambulance
+            <h3>108</h3>
+        </div>
+
+        <div class="number-card">
+            👩 Women Helpline
+            <h3>1091</h3>
+        </div>
+
+        <div class="number-card">
+            🔥 Fire Brigade
+            <h3>101</h3>
+        </div>
+
+        <div class="number-card">
+            👶 Child Helpline
+            <h3>1098</h3>
+        </div>
+
+        <div class="number-card">
+            💻 Cyber Crime
+            <h3>1930</h3>
+        </div>
+
+        <div class="number-card">
+            🚨 Emergency Response Support System
+            <h3>112</h3>
+        </div>
+
+        <div class="number-card">
+            🚂 Railway Helpline
+            <h3>139</h3>
+        </div>
+
+    </div>
+
+</section>
+<section class="tips-section">
+
+    <h2 class="section-title">
+        Safety Tips for Women
+    </h2>
+
+    <div class="tips-grid">
+
+        <div class="tip-card">
+            🧴 Carry Pepper Spray
+            <p>Keep a legal self-defense spray easily accessible.</p>
+        </div>
+
+        <div class="tip-card">
+            📍 Share Live Location
+            <p>Share your location with trusted family or friends.</p>
+        </div>
+
+        <div class="tip-card">
+            📱 Keep Phone Charged
+            <p>Ensure your phone has sufficient battery before travelling.</p>
+        </div>
+
+        <div class="tip-card">
+            🚖 Verify Cab Details
+            <p>Check vehicle number and driver details before boarding.</p>
+        </div>
+
+        <div class="tip-card">
+            👥 Stay in Public Areas
+            <p>Avoid isolated places, especially at night.</p>
+        </div>
+
+        <div class="tip-card">
+            🚨 Use SOS Quickly
+            <p>Press the SOS button immediately if you feel unsafe.</p>
+        </div>
+
+    </div>
+
+</section>
+<section class="contact-section" id="contact">
+
+    <h2 class="section-title">
+        Trusted Contacts
+    </h2>
+
+    <div class="contact-form">
+
+        <input type="text" id="name" placeholder="Family Member Name">
+
+        <input type="tel" id="phone" placeholder="Phone Number">
+
+        <button onclick="addContact()">
+            Add Contact
+        </button>
+
+    <div id="contactList"></div>
+
+</section>
+  </section>
+<script src="design.js"></script>
+</body>
+</html>
